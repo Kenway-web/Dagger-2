@@ -1,7 +1,11 @@
 package com.anushka.didemo
 
-class NickelCadiumBattery: Battery {
+import android.util.Log
+import javax.inject.Inject
+
+
+class NickelCadmiumBattery @Inject constructor(): Battery {
     override fun getPower() {
-        super.getPower()
+        Log.i("MYTAG", "Power From NickelCadiumNattery")
     }
 }
